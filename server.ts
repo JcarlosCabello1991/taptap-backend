@@ -21,7 +21,4 @@ export default async(app:Express) => {
   app.listen(process.env.PORT_SERVER || 4000, () => {
     console.log("Server running");
   })
-  app.use("/", (_req, res) => {
-    res.send("Tap server")
-  })
 }
