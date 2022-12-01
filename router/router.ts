@@ -28,7 +28,7 @@ export const routerTaps = (app:Express) => {
     res.status(200).send(ranking);
   })
 
-  app.use('/', (_req, res) => {
+  app.use('', (_req, res) => {
     res.send("Tap server");
   })
 }
