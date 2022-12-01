@@ -22,10 +22,6 @@ const startServer = async () => {
       console.log("Error connecting to DB")
     }
   })
-
-  app.get("/", (_req, res) => {
-    res.send("TAP tap server")
-  })
 }
 
 startServer();
