@@ -17,6 +17,9 @@ const startServer = async () => {
       app.listen(process.env.PORT || 4000, () => {
         console.log(`Server is running on port ${process.env.PORT}`)
       });
+      app.use('/', (_req, res) => {
+        res.send("TapTap Server")
+      })
     }catch(error){
       console.log("Error connecting to DB")
     }

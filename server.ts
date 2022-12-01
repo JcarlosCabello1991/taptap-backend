@@ -17,9 +17,7 @@ export default async(app:Express) => {
   app.use(express.json({ limit: "50mb" }));
   
   routerTaps(app);
-  app.use('/', (_req, res) => {
-      res.send("TapTap Server")
-    })
+
   app.listen(process.env.PORT_SERVER || 4000, () => {
     console.log("Server running");
   })
