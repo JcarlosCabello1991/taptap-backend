@@ -17,7 +17,7 @@ const startServer = async () => {
       app.listen(process.env.PORT || 4000, () => {
         console.log(`Server is running on port ${process.env.PORT}`)
       });
-      app.use("", (_req, res) => {
+      app.use("/", (_req, res) => {
         res.send("Tap server")
       })
     }catch(error){
